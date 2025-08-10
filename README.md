@@ -3706,24 +3706,24 @@ specified personnel if the temperature is outside of those thresholds.
 
 **[⬆ Back to Top](#table-of-contents)**
 
+=>Test
+
 ### You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located throughout the world. A single device can produce 2 megabytes (MB) of data every 24 hours. Each store location has one to five devices that send data. You must store the device data in Azure Blob storage. Device data must be correlated based on a device identifier. Additional stores are expected to open in the future. You need to implement a solution to receive the device data. Solution: Provision an Azure Service Bus. Configure a topic to receive the device data by using a correlation filter. Does the solution meet the goal?
 
 - [x] Yes.
 - [ ] No.
 
-> ❌ **不满足目标**：
+=>Test
+
+>  **不满足目标**：
 > Service Bus 设计用于企业级消息传递场景，**并不适合处理大规模设备遥测数据**（如 IoT 场景）。吞吐能力有限，难以支撑每天 20GB 数据、上万设备并发的情况.
 
 **[⬆ Back to Top](#table-of-contents)**
-
-=>Test
 
 ### You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located throughout the world. A single device can produce 2 megabytes (MB) of data every 24 hours. Each store location has one to five devices that send data. You must store the device data in Azure Blob storage. Device data must be correlated based on a device identifier. Additional stores are expected to open in the future. You need to implement a solution to receive the device data. Solution: Provision an Azure Event Grid. Configure event filtering to evaluate the device identifier. Does the solution meet the goal?
 
 - [ ] Yes.
 - [x] No.
-
-=>Test
 
 > ❌ **不满足目标**：
 >  Azure Event Grid 是事件通知系统，并非为高吞吐设备数据摄取场景设计，无法有效接收、处理并存储来自数千台设备的数据。
@@ -5679,9 +5679,9 @@ specified personnel if the temperature is outside of those thresholds.
 >     - name: accesskey       # Box 1: volumes
 >       secret:
 >         secretName: my-secret   # 这个名字必须和下面 Secret 定义的 metadata.name 一致
->         
+>           
 >   ---
->         
+>           
 >   apiVersion: v1
 >   kind: Secret
 >   metadata:
