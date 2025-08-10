@@ -3712,7 +3712,7 @@ specified personnel if the temperature is outside of those thresholds.
 - [ ] No.
 
 > ❌ **不满足目标**：
-> Service Bus 设计用于企业级消息传递场景，**并不适合处理大规模设备遥测数据**（如 IoT 场景）。吞吐能力有限，难以支撑每天 20GB 数据、上万设备并发的情况。
+> Service Bus 设计用于企业级消息传递场景，**并不适合处理大规模设备遥测数据**（如 IoT 场景）。吞吐能力有限，难以支撑每天 20GB 数据、上万设备并发的情况.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -5675,9 +5675,9 @@ specified personnel if the temperature is outside of those thresholds.
 >     - name: accesskey       # Box 1: volumes
 >       secret:
 >         secretName: my-secret   # 这个名字必须和下面 Secret 定义的 metadata.name 一致
->     
+>       
 >   ---
->     
+>       
 >   apiVersion: v1
 >   kind: Secret
 >   metadata:
